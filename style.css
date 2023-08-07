@@ -1,0 +1,681 @@
+:root{
+    --brand-color:#5856f2;
+    --burple-color:#7289da;
+    --blackish-color:#36393e;
+    --DarkNB-color:#2c2f33;
+    --off-white:#f6f6f6;
+    --brand-gradient:linear gradient(90deg)#8ea1e1, #7289da;
+}
+:root{
+    --font-headline: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue",Helvetica, Arial, sans-serif;
+    --font-display:"gg sans", "Noto Sans","Helvetica Neue",Helvetica, Arial, sans-serif;
+    --font-primary:"gg sans", "Noto Sans","Helvetica Neue",Helvetica, Arial, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:var(--font-display);
+    text-rendering: optimizeLegibility;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+    padding: 0;
+}
+.container-sidebar{
+    max-width: 90%;
+    margin: auto;
+    padding: 0;
+}
+ul, p, h1, h2, h3, h4, h5, a, li, span{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: 0;
+    vertical-align: baseline;
+    border: 0;
+    cursor: pointer;
+}
+#navTop{
+    position: relative;
+}
+#showcase-top{
+    width: 100%;
+    height: 98vh;
+    overflow: hidden;
+    background-color: var(--brand-color);
+    z-index: 1;
+}
+#navTop .navBar{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+#navTop .discordLogo{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -10%);
+  color: #fff;
+}
+.list-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(0%, -30%);
+}
+.navItems li{ 
+    padding: 0.8rem;
+}
+.navItems a:hover{
+    text-decoration: underline;
+}
+.navBar .btn{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -5%);
+}
+
+.open-sidebar span{
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    background-color: #5856f2;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+.sidebar-items{
+    background-color: var(--off-white);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 310px;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    display: none;
+    z-index: 2;
+    overflow: hidden;
+}
+.sidebar-items .close-sidebar{
+    font-size: 25px;
+    color: var(--blackish-color);
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+.discordLogo-sidebar{
+    padding-top: 1.3rem;
+    padding-bottom: 1.5rem;
+}
+.sidebar-items line{
+    border: 0.5rem solid var(--blackish-color);
+}
+.sidebar-items ul{
+    margin-top: 3rem;
+}
+.sidebar-items li{
+    padding-bottom: 1.3rem;
+    margin-left: 1.5rem;
+}
+.sidebar-items .links-items a:hover{
+    text-decoration: underline;
+    opacity: 0.4;
+}
+.sidebar-items .text-smd{
+    color: var(--blackish-color);
+}
+.sidebar-items .active-state{
+    padding: 10px;
+    background-color: #dee1eb;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: #7289da;
+}
+.sidebar-items .fa-sidebar{
+    margin-left: 0.8rem;
+}
+.sidebar-btn{
+    padding-top: 3rem;
+    margin-left: 1.5rem;
+}
+
+.sidebar-btn .btn-xlg{
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 2rem;
+    background-color: var(--brand-color);
+    color: var(--off-white);
+}
+.sidebar-btn .btn-xlg:hover{
+    background-color: var(--burple-color);
+}
+
+#showcase-1{
+    position: relative;
+}
+#showcase-1 .showcase-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 60%;
+    padding-top: 10rem;
+    padding-bottom: 56px;
+}
+.showcase-text h1{
+    text-rendering: geometricPrecision;
+    padding-bottom: 2.5rem;
+    letter-spacing: -5px;
+}
+.showcase-text p{
+    color: #fff;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 1.2rem;
+}
+#showcase-1 .btnShowcase{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+}
+.btnShowcase .btn-xlg:hover{
+    color: var(--brand-color);
+}
+.btnShowcase .btn-xxlg:hover{
+    opacity: 0.8;
+}
+#showcase-1 img{
+    width: 40%;
+    position: absolute;
+    top: 38%;
+    left: -12%;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+    z-index: 1;
+}
+
+.showcase-2{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: 2rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    line-height: 1.5;
+}
+.showcase-text-2 .text-md{
+    color: var(--blackish-color);
+    padding-top: 1.5rem;
+}
+#section-3{
+    background-color: #eeecec;
+}
+.showcase-3{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    grid-gap: 2rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 5.5rem;
+    line-height: 1.5;
+}
+.showcase-text-3 .text-md{
+    color: var(--blackish-color);
+    padding-top: 1.5rem;
+}
+.showcase-4{
+    display: grid;
+    grid-template-columns: 3.5fr 2fr;
+    grid-gap: 2rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 5.5rem;
+    line-height: 1.5;
+}
+.showcase-text-4 .text-md{
+    color: var(--blackish-color);
+    padding-top: 1.5rem;
+}
+.showcase-5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+#section-5{
+    background-color: #eeecec;
+}
+.showcase-text-5 .text-lg{
+    text-transform: uppercase;
+    padding-top: 7rem;
+    letter-spacing: -5px;
+}
+.showcase-text-5 .text-md{
+    color: var(--blackish-color);
+    padding-top: 1.5rem;
+}
+.showcase-5 .text-slg{
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.showcase-5 .btn-xlg{
+    background-color: var(--brand-color);
+    color: #fff;
+}
+.showcase-5 .btn-xlg:hover{
+    background-color: var(--burple-color);
+}
+.showcase-5 .btn-1{
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+#footer{
+    background-color: var(--DarkNB-color);
+    padding-bottom: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+.footer-tab{
+    display: grid;
+    grid-template-columns: repeat(5, 1.5fr);
+    grid-gap: 1rem;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+}
+.footer-col-1 img{
+    width: 20px;
+}
+.footer-col-1 .text{
+    font-size: 0.8rem;
+    color: #fff;
+    margin-left: 0.5rem;
+}
+.footer-col-1 .fa-down-icon{
+    margin-left: 1rem;
+    color: #fff;
+}
+.footer-col-1 .text-lg{
+    padding-bottom: 1rem;
+}
+.footer-col-1 .usa-logo{
+   margin-left: 0.5rem; 
+}
+.social-media{
+    margin-top: 1rem;
+    color: #fff;
+}
+.social-media svg{
+    width: 13%;
+    margin-right: 0.6rem;
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#footer .text-md{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--brand-color);
+}
+#footer .text-lg{
+    font-family: var(--font-headline);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    line-height: 1;
+    text-rendering: geometricPrecision;
+    letter-spacing: -3px;
+}
+.footer-tab .text-smd{
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 200;
+}
+#footer a{
+    line-height: 2;
+}
+#footer span:hover{
+    text-decoration: underline;
+}
+.footer-line{
+    border: 0.5px solid var(--brand-color);
+}
+.footer-down{  
+    position: relative;
+    padding-top: 2rem;
+}
+.footer-down .discordLogo-buttom{
+    color: #fff;
+    position: absolute;
+    left: 0;
+}
+.footer-down .btn-signup{
+    position: absolute;
+    right: 0; 
+}
+.footer-down .btn-sm{
+    background-color: var(--brand-color);
+    color: var(--off-white);
+    padding: 0.6rem 0.8rem;
+}
+.footer-down .btn-sm:hover{
+    background-color: var(--burple-color);
+}
+
+
+/* text styling */
+.text-smd{
+    color: #fff;
+}
+.text-md{
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.text-slg{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--blackish-color);
+}
+.text-lg{
+    font-family: var(--font-headline);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--DarkNB-color);
+    text-rendering: geometricPrecision;
+}
+.text-xlg{
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: var(--font-headline);
+    color: #fff;
+}
+
+/* utilities */
+.btn-sm{
+    padding: 0.5rem 1rem;
+    border-radius: 30rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn-xlg{
+    padding: 1.3rem 3.5rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    color: var(--blackish-color);
+}
+.btn-xxlg{
+    padding: 1.3rem 3.5rem;
+    background-color: var(--blackish-color);
+    color: #fff;
+    border-radius: 5rem;
+    margin: 2em;
+}
+.fa-icon-download{
+    margin: 1rem;
+}
+
+
+/* media queries */
+
+@media(max-width:650px){
+
+    .container{
+        max-width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+    #showcase-top{
+        width: 100%;
+        height: 120vh;
+        overflow: hidden;
+        background-color: var(--brand-color);
+        position: relative;
+    }
+    #navTop .navBar{
+        height: 30px;
+        position: relative;
+    }
+    #navTop .discordLogo{
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      color: #fff;
+    }
+    .list-items{
+    display: none;
+    }
+    .navBar .btn{
+        position: absolute;
+        top: 50%;
+        right: 7%;
+        transform: translate(-50%, -7%);
+    }
+    .open-sidebar span{
+        display: block;
+    }
+    .sidebar-items {
+        display: " ";
+        transition: 5%;
+    }
+    #showcase-1 .showcase-text{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        margin: right;
+        align-items: left;
+        max-width: 95%;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .showcase-text h1{
+        text-rendering: geometricPrecision;
+        padding-bottom: 2rem;
+        letter-spacing: -1px;
+    }
+    .showcase-text p{
+        color: #fff;
+        line-height: 1.5;
+        text-rendering: optimizeLegibility;
+        padding-bottom: 1.2rem;
+    }
+    #showcase-1 .btnShowcase{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        text-align: center;
+    }
+    #showcase-1 img{
+        width: 80%;
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        object-fit: contain;
+        mix-blend-mode: normal; 
+    }
+    .showcase-2{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        line-height: 1.5;
+    }
+    .showcase-2 img{
+        width: 450px;
+    }
+    .showcase-3{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        line-height: 1.5;
+    }
+    .showcase-3 img{
+        width: 450px;
+    }
+    .showcase-4{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        line-height: 1.5;
+    }
+    .showcase-4 img{
+        width: 450px;
+    }
+    .showcase-5{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+    }
+    .showcase-5 img{
+        width: 450px;
+    }
+    .showcase-text-5 .text-lg{
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        letter-spacing: -3px;
+        padding-top: 3rem;
+    }
+    .showcase-text-5 .text-md{
+        color: var(--blackish-color);
+        padding-top: 1rem;
+        line-height: 1.8;
+    }
+    .showcase-5 .text-slg{
+        font-size: 1.7rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    .showcase-5 .btn-xlg{
+        background-color: var(--brand-color);
+        color: #fff;
+        padding: 1.5rem 6.5rem;
+    }
+    .showcase-5 .btn-xlg:hover{
+        background-color: var(--burple-color);
+    }
+    .showcase-5 .btn-1{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    .showcase-5 .btn-1 .text-smd{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .footer-tab{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+
+
+        /* text styling */
+    .text-smd{
+        color: #fff;
+    }
+    .text-md{
+        font-family: var(--font-primary);
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .text-slg{
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: var(--blackish-color);
+    }
+    .text-lg{
+        font-family: var(--font-headline);
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--DarkNB-color);
+        text-rendering: geometricPrecision;
+    }
+    .text-xlg{
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: var(--font-headline);
+        color: #fff;
+    }
+
+    /* utilities */
+    .btn-sm{
+        padding: 0.5rem 1rem;
+        border-radius: 30rem;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .btn-xlg{
+        padding: 1.3rem 3.5rem;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        border-radius: 5rem;
+        color: var(--blackish-color);
+    }
+    .btn-xxlg{
+        padding: 1.3rem 3.5rem;
+        background-color: var(--blackish-color);
+        color: #fff;
+        border-radius: 5rem;
+        margin: 2em;
+    }
+    .fa-icon-download{
+        margin: 1rem;
+    }
+    
+}
+
